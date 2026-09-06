@@ -1,0 +1,18 @@
+{
+    "name": "BG-ii",
+    "image": "debian:13.3-slim",
+    "workspaceFolder": "/src",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/src,type=bind",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1.3": {},
+        "ghcr.io/devcontainers/features/common-utils:2.5": {},
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {
+            "candidate": "java",
+            "version": "25.0.1-tem"
+        }
+    },
+    "runArgs": [
+        "--name",
+        "BG-ii-bind"
+    ]
+}
